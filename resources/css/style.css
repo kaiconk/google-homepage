@@ -17,51 +17,36 @@ body {
     display: block;
 }
 
-.main-nav {
-   
-    padding: 20px 20px 20px 20px;
-    height: 60px;   
-}
 
 .main-nav a {  
     text-decoration: none;
-    color: #222;   
-   
+    color: #222;
+    padding: 12px 12px 12px 12px;   
 }
 
 .left-nav {
-
-    display: flex;
-    align-items: center;
-
     display: inline-block;
-  
+    padding: 5px;
     margin: 0 5px;
-  
-    color: #222;
-
 }
 
-.left-nav a {
+.left-nav a, .right-nav a {
     display: inline-block;
     vertical-align: middle;
 }
 
 .right-nav {
- 
     float: right;
     align-items: center;
+    padding: 0 5px 0 5px;
+    margin: 0 10px;
 }
 
-.right-nav a {
-    display: inline-block;
-    vertical-align: middle;
-}
 
 #login-button {
     /* slight round corners */
     border-radius: 3px;
-    padding: 10px 15px;
+    padding: 10px 10px; 
 }
 
 #login-button:link,
@@ -72,18 +57,33 @@ body {
 }
 
 
-.logo-container {
-    display: block;
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .google-image {
+
+    position: absolute;
+    top: 40%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+.google-image img {
     height: 92px;
     width: 272px;
 }
 
 #search-box {
-    
-    position: relative;
+
+    /* center searchh box ####### */
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    /* ########################## */
 
     padding: 1px 44px 1px 52px;
     color: #222;
