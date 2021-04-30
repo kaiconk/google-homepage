@@ -17,57 +17,60 @@ body {
     display: block;
 }
 
-.content {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    min-width: fit-content;
-    position: relative;
-    z-index: 1;
-    flex-shrink: 0;
-
-}
-
 .main-nav {
-    padding: 6px;
-    height: 60px;
-    
+   
+    padding: 20px 20px 20px 20px;
+    height: 60px;   
 }
 
-.main-nav a {
-   
+.main-nav a {  
     text-decoration: none;
-    color: #222;
-    font-size: 16px;
-    
+    color: #222;   
+   
 }
 
 .left-nav {
+
+    display: flex;
+    align-items: center;
+
     display: inline-block;
-    padding: 5px;
+  
     margin: 0 5px;
+  
     color: #222;
+
+}
+
+.left-nav a {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .right-nav {
-    min-width: auto;
-    height: 48px;
-    color: #222;
-
-    position: relative;
+ 
     float: right;
-
-    box-sizing: border-box;
-    line-height: normal;
-    padding: 0 4px;
-    padding-left: 30px;
-   
-    flex: 0 0 auto;
     align-items: center;
-    vertical-align: middle;
-    justify-content: flex-end;
 }
+
+.right-nav a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#login-button {
+    /* slight round corners */
+    border-radius: 3px;
+    padding: 10px 15px;
+}
+
+#login-button:link,
+#login-button:visited {
+    background-color: #1a73e8;
+    border: 1px solid #1a73e8;
+    color: #fff; 
+}
+
 
 .logo-container {
     display: block;
